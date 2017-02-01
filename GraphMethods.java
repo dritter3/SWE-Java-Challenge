@@ -62,7 +62,7 @@ public class GraphMethods{
 		if(current.getChildren().length > 0){
 			for(GNode child : current.getChildren()){
 				//Recurse through all possible child nodes and start adding leaf children 
-				//to one path list, which gets added to the list of paths
+				//to different path lists, which gets added to the list of paths
 				pathsList.addAll(paths(child));
 			}
 
